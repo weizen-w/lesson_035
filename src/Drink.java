@@ -15,8 +15,8 @@ public class Drink extends Food {
     this.still = still;
   }
 
-  public String openDrink(Drink drink) {
-    if (drink.isStill()) {
+  public String openDrink() {
+    if (still) {
       return "скр";
     }
     return "пшш";

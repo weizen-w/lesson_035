@@ -17,11 +17,11 @@ public class Main {
     System.out.println("Измененное имя еды: " + food.getName());
     System.out.println("Человек ест - \"" + food.useFood() + "\"");
     Drink drink = new Drink("Кола", false);
-    System.out.println("Открываем " + drink.getName() + " - " + drink.openDrink(drink));
+    System.out.println("Открываем " + drink.getName() + " - " + drink.openDrink());
     drink.setName("Вода");
     System.out.println("Измененное имя напитка: " + drink.getName());
     drink.setStill(true);
-    System.out.println("Открываем " + drink.getName() + " - " + drink.openDrink(drink));
+    System.out.println("Открываем " + drink.getName() + " - " + drink.openDrink());
     System.out.println("Человек пьет - \"" + drink.useFood() + "\"");
   }
 }
