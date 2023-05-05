@@ -4,6 +4,7 @@ public class Drink extends Food {
 
   public Drink(String name, boolean still) {
     super(name);
+    this.still = still;
   }
 
   public boolean getStill() {
