@@ -15,13 +15,13 @@ public class Main {
     System.out.println("Текущее название еды: " + food.getName());
     food.setName("бутерброд");
     System.out.println("Измененное имя еды: " + food.getName());
-    System.out.println("Человек ест " + food.getName() + " - \"" + Food.useFood() + "\"");
+    System.out.println("Человек ест - \"" + food.useFood() + "\"");
     Drink drink = new Drink("Кола", false);
-    System.out.println("Открываем " + drink.getName() + " - " + Drink.openDrink(drink));
+    System.out.println("Открываем " + drink.getName() + " - " + drink.openDrink(drink));
     drink.setName("Вода");
     System.out.println("Измененное имя напитка: " + drink.getName());
-    (drink).setStill(true);
-    System.out.println("Открываем " + drink.getName() + " - " + Drink.openDrink(drink));
-    System.out.println("Человек пьет " + drink.getName() + " - \"" + Drink.useFood() + "\"");
+    drink.setStill(true);
+    System.out.println("Открываем " + drink.getName() + " - " + drink.openDrink(drink));
+    System.out.println("Человек пьет - \"" + drink.useFood() + "\"");
   }
 }

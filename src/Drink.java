@@ -7,7 +7,7 @@ public class Drink extends Food {
     this.still = still;
   }
 
-  public boolean getStill() {
+  public boolean isStill() {
     return still;
   }
 
@@ -15,8 +15,8 @@ public class Drink extends Food {
     this.still = still;
   }
 
-  static String openDrink(Drink drink) {
-    if (drink.getStill()) {
+  public String openDrink(Drink drink) {
+    if (drink.isStill()) {
       return "скр";
     }
     return "пшш";

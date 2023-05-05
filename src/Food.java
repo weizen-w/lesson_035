@@ -14,7 +14,7 @@ public class Food {
     this.name = name;
   }
 
-  static String useFood() {
-    return "ммм...ням-ням";
+  public String useFood() {
+    return name + " - ммм...ням-ням";
   }
 }
